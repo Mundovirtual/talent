@@ -1,9 +1,9 @@
 $( document ).ready(function() { 
-	 // mostrar_categoria();
+	  mostrar_categoria();
 });
 
 
- 
+
 
 
 
@@ -26,7 +26,8 @@ var tabla_nombre;
         },
         "columns": [ 
             { "data": "idT" },
-            { "data": "Equipo" }  
+            { "data": "Equipo" },
+            {"defaultContent":"<button type='button' class='btn btn-success fa fa-pencil-square-o' data-toggle='modal' id='editar_categoria' name='editar_categoria'  data-target='#modal_editar_Categorias'></button><button type='button' class='btn btn-danger fa fa-trash' data-toggle='modal' id='eliminar_categoria' name='eliminar_categoria' data-target='#modal_eliminar_categorias' > </button>"}  
         ],
         "oLanguage": {
             "sProcessing": "Procesando...",
