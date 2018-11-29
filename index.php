@@ -15,8 +15,13 @@
   <link rel="stylesheet" type="text/css" href="css/login/main.css">
 <!--===============================================================================================-->
 </head>
+
 <body>
-  
+
+
+<?php
+include('index.html');
+?>  
   <div class="limiter">
     <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
       <div class="wrap-login100 p-t-30 p-b-50">
