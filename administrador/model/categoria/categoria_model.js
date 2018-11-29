@@ -10,16 +10,32 @@
 
 /*=====================================Editar============================================================*/
 
-    id_editar=""; 
+    id_editar_categoria="";  
     function actualizar_categorias(id,categoria){
-        id_editar=id; 
+        id_editar_categoria=id;  
         $("#editar_categoria").val(categoria);
     }
 
 
     $("#botton_editar_categoria").click(function() {    
-            let editar=$("#formulario_editar_categorias").serialize();   
-            alert(editar);  
+            let editar_cat=$("#editar_categoria").val(); 
+             
+            $.ajax({
+                url: '../model/categoria/categoria_model.php',
+                type: 'POST',
+                dataType: 'json',
+                data: {'id_actualizar': id_editar_categoria,'categoria':editar_cat},
+            })
+            .done(function() {
+                console.log("success");
+            })
+            .fail(function() {
+                console.log("error");
+            })
+            .always(function() {
+                console.log("complete");
+            });
+            
     });
 
 
@@ -31,8 +47,21 @@
     }
     
     $("#button_aceptar_eliminacion").click(function() {    
-            
-        alert(eliminar_cat);        
+        $.ajax({
+            url: '../model/categoria/categoria_model.php',
+            type: 'POST',
+            dataType: 'json',
+            data: {'id_eliminar': eliminar_cat},
+        })
+        .done(function() {
+            console.log("success");
+        })
+        .fail(function() {
+            console.log("error");
+        })
+        .always(function() {
+            console.log("complete");
+        });      
     });
 
  
