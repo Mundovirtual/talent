@@ -61,7 +61,7 @@
 
     <!--===============================================================================================--> 
     <!-- Data tables-->    
-    <link rel="stylesheet" type="text/css" href="../../js/DataTables/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../js/DataTables/datatables.css">
     <script type="text/javascript" src="../../js/DataTables/datatables.js"></script>
     <!--===============================================================================================--> 
 

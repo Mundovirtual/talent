@@ -118,4 +118,4 @@
  			
 		</div>
 	</div>
- 
+<script type="text/javascript" src="../model/categoria/categoria_model.js"></script>
