@@ -1,5 +1,5 @@
 <?php
-include_once("../../conexionDB/conexion.php");  
+include_once("conexion.php");  
 
 class admin_controller{
 

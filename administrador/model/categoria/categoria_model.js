@@ -1,15 +1,40 @@
-$( document ).ready(function() { 
-	  mostrar_categoria();
-});
+    $( document ).ready(function() { 
+    	  mostrar_categoria();
+    });
 
 
+/*=================================REGISTRAR=============================================================*/
+    $("#button_registrar_categoria").click(function() {    
+            let datosRegistrar=$("#formulario_registrar_Categorias").serialize();     
+    });
+
+/*=====================================Editar============================================================*/
+
+    id_editar=""; 
+    function actualizar_categorias(id,categoria){
+        id_editar=id; 
+        $("#editar_categoria").val(categoria);
+    }
 
 
+    $("#botton_editar_categoria").click(function() {    
+            let editar=$("#formulario_editar_categorias").serialize();     
+    });
 
 
+/*=====================================Editar============================================================*/
 
+ eliminar_cat="";
+    function eliminar_categorias(id){
+        eliminar_cat=id;  
+    }
+    
+    $("#button_aceptar_eliminacion").click(function() {    
+            
+        alert(eliminar_cat);        
+    });
 
-
+ 
 
 
 var tabla_nombre;
@@ -25,9 +50,11 @@ var tabla_nombre;
             "type": "POST"
         },
         "columns": [ 
-            { "data": "idT" },
-            { "data": "Equipo" },
-            {"defaultContent":"<button type='button' class='btn btn-success fa fa-pencil-square-o' data-toggle='modal' id='editar_categoria' name='editar_categoria'  data-target='#modal_editar_Categorias'></button><button type='button' class='btn btn-danger fa fa-trash' data-toggle='modal' id='eliminar_categoria' name='eliminar_categoria' data-target='#modal_eliminar_categorias' > </button>"}  
+           
+            { "data": "id" },
+            { "data": "categoria" },
+            { "data": "Editar" },
+            { "data": "Eliminar" } 
         ],
         "oLanguage": {
             "sProcessing": "Procesando...",

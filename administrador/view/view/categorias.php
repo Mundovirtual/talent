@@ -22,7 +22,8 @@
 			    <tr>
 			      <th scope="col">#</th>
 			      <th scope="col">Categorias</th> 
-			      <th scope="col"></th>  
+			      <th scope="col">Editar</th> 
+			      <th scope="col">Eliminar</th>  
 			    </tr>
 			  </thead>
 			  <tbody>
@@ -59,7 +60,7 @@
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">
 					cerrar
 				</button>						 
-				<button type="button" class="btn btn-primary">
+				<button type="button" class="btn btn-primary" id="button_registrar_categoria">
 					Registrar
 				</button> 
 				
@@ -83,7 +84,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				 <form id="formulario_editar_Categorias">
+				 <form id="formulario_editar_categorias">
 					  <div class="form-group">
 					    <label>categoría</label>
 					    <input type="text" class="form-control" id="editar_categoria" name="editar_categoria" placeholder="categoria">
@@ -94,7 +95,7 @@
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">
 					cerrar
 				</button>						 
-				<button type="button" class="btn btn-primary">
+				<button type="button" class="btn btn-primary" id="botton_editar_categoria">
 					Editar
 				</button> 
 				
@@ -122,10 +123,10 @@
 			</div>
 			<div class="modal-footer">	
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">
-					aceptar
+					cerrar
 				</button>						 
-				<button type="button" class="btn btn-primary">
-					Editar
+				<button type="button" class="btn btn-danger"  id="button_aceptar_eliminacion">
+					eliminar
 				</button> 
 				
 			</div>
