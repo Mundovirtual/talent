@@ -23,7 +23,7 @@
 			      <th scope="col">#</th>
 			      <th scope="col">Categorias</th> 
 			      <th scope="col">Editar</th> 
-			      <th scope="col">Eliminar</th> 
+			      <th scope="col">Eliminar</th>  
 			    </tr>
 			  </thead>
 			  <tbody>
@@ -60,7 +60,7 @@
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">
 					cerrar
 				</button>						 
-				<button type="button" class="btn btn-primary">
+				<button type="button" class="btn btn-primary" id="button_registrar_categoria">
 					Registrar
 				</button> 
 				
@@ -84,7 +84,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				 <form id="formulario_editar_Categorias">
+				 <form id="formulario_editar_categorias">
 					  <div class="form-group">
 					    <label>categoría</label>
 					    <input type="text" class="form-control" id="editar_categoria" name="editar_categoria" placeholder="categoria">
@@ -95,7 +95,7 @@
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">
 					cerrar
 				</button>						 
-				<button type="button" class="btn btn-primary">
+				<button type="button" class="btn btn-primary" id="botton_editar_categoria">
 					Editar
 				</button> 
 				
@@ -105,6 +105,35 @@
 	</div>				
 </div>
 
+
+<!--==========================MODAL Eliminrar===========================================-->
+<div class="modal fade" id="modal_eliminar_categorias" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">
+					Eliminar categoría
+				</h5> 
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				  Estas seguro de eliminar  la categoría?
+			</div>
+			<div class="modal-footer">	
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">
+					cerrar
+				</button>						 
+				<button type="button" class="btn btn-danger"  id="button_aceptar_eliminacion">
+					eliminar
+				</button> 
+				
+			</div>
+		</div>
+		
+	</div>				
+</div>
 
  <div class="row">
 		<div class="col-md-1">
@@ -118,4 +147,4 @@
  			
 		</div>
 	</div>
- 
+<script type="text/javascript" src="../model/categoria/categoria_model.js"></script>
