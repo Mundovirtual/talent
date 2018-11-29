@@ -18,7 +18,8 @@
 
 
     $("#botton_editar_categoria").click(function() {    
-            let editar=$("#formulario_editar_categorias").serialize();     
+            let editar=$("#formulario_editar_categorias").serialize();   
+            alert(editar);  
     });
 
 
