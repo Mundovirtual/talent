@@ -97,7 +97,7 @@
                 
             <li>
                 <a href="../view/index.php?talent=1" aria-expanded="false"> 
-                  <i class="fas fa-phone"></i>Estudiantes</a>
+                  <i class="fas fa-user-graduate"></i>Estudiantes</a>
             </li>
  
             <li><a href="#Registros" aria-expanded="false" data-toggle="collapse"> <i class="fa fa-plus"></i>Registros </a>
